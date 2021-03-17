@@ -2,11 +2,11 @@ import React from 'react';
 import Footer from './Footer';
 import Nav from './Nav';
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <div>
       <Nav />
-      <p>I am the page content</p>
+      {children}
       <Footer />
     </div>
   );
