@@ -5,5 +5,5 @@ export default function OrderPage() {
     <div>
       <p>Hey! I'm the Orders page</p>
     </div>
-  )
+  );
 }

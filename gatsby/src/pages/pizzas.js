@@ -5,5 +5,5 @@ export default function PizzasPage() {
     <div>
       <p>Hey! I'm the Pizzas page</p>
     </div>
-  )
+  );
 }

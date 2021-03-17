@@ -11,6 +11,6 @@ exports.components = {
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\Jonathan Gomez\\Desktop\\pizza\\gatsby\\src\\pages\\index.js"))),
   "component---src-pages-orders-js": hot(preferDefault(require("C:\\Users\\Jonathan Gomez\\Desktop\\pizza\\gatsby\\src\\pages\\orders.js"))),
   "component---src-pages-pizzas-js": hot(preferDefault(require("C:\\Users\\Jonathan Gomez\\Desktop\\pizza\\gatsby\\src\\pages\\pizzas.js"))),
-  "component---src-pages-slicemaster-js": hot(preferDefault(require("C:\\Users\\Jonathan Gomez\\Desktop\\pizza\\gatsby\\src\\pages\\slicemaster.js")))
+  "component---src-pages-slicemasters-js": hot(preferDefault(require("C:\\Users\\Jonathan Gomez\\Desktop\\pizza\\gatsby\\src\\pages\\slicemasters.js")))
 }
 
