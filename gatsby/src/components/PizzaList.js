@@ -3,6 +3,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 function SinglePizza({ pizza }) {
+  console.log(pizza.name, pizza.image);
   return (
     <div>
       <Link to={`/pizza/${pizza.slug.current}`}>
