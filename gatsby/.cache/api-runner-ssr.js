@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('C:/Users/Jonathan Gomez/Desktop/pizza/gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/Jonathan Gomez/Desktop/pizza/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      options: {"plugins":[],"projectId":"9fcg9sr4","dataset":"production","watchMode":true,"token":"skPbqy7PQl3bHQ4cmUM2uCUGw089telCYy22qjA8XOrY4S3PTWNZ8RJPpGF0N0MkYEzEX3P7DXCzNkmaCI0D05sMebQNiZqQsjIKZA3vDGirTjSxKNXBCkoO5ZJ49NppCfsLO8D76i67BDhz9EKELjJBxNgMej2w9SB136iLU0Td0JCpbqti"},
+    },{
       plugin: require('C:/Users/Jonathan Gomez/Desktop/pizza/gatsby/gatsby-ssr'),
       options: {"plugins":[]},
     }]
