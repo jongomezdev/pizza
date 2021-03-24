@@ -6,6 +6,7 @@ import useForm from '../utils/useForm';
 import calculatePizzaPrice from '../utils/calculatePizzaPrice';
 import formatMoney from '../utils/formatMoney';
 import OrderStyles from '../styles/OrderStyles';
+import MenuItemStyles from '../styles/MenuItemStyles';
 
 export default function OrderPage({ data }) {
   // const [name, setName] = useState('');
@@ -40,7 +41,7 @@ export default function OrderPage({ data }) {
         <fieldset className="menu">
           <legend>Menu</legend>
           {pizzas.map((pizza) => (
-            <div key={pizza.id}>
+            <MenuItemStyles key={pizza.id}>
               <Img
                 width="50"
                 height="50"
@@ -57,7 +58,7 @@ export default function OrderPage({ data }) {
                   </button>
                 ))}
               </div>
-            </div>
+            </MenuItemStyles>
           ))}
         </fieldset>
         <fieldset className="order">
