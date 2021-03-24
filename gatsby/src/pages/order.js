@@ -4,6 +4,8 @@ import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 import useForm from '../utils/useForm';
 import calculatePizzaPrice from '../utils/calculatePizzaPrice';
+import formatMoney from '../utils/formatMoney';
+import OrderStyles from '../styles/OrderStyles';
 
 export default function OrderPage({ data }) {
   // const [name, setName] = useState('');
@@ -15,7 +17,7 @@ export default function OrderPage({ data }) {
   return (
     <>
       <SEO title="Order a pizza!" />
-      <form>
+      <OrderStyles>
         <fieldset>
           <legend>Your info</legend>
           <label htmlFor="name">Name</label>
@@ -35,7 +37,7 @@ export default function OrderPage({ data }) {
             onChange={updateValue}
           />
         </fieldset>
-        <fieldset>
+        <fieldset className="menu">
           <legend>Menu</legend>
           {pizzas.map((pizza) => (
             <div key={pizza.id}>
@@ -51,17 +53,17 @@ export default function OrderPage({ data }) {
               <div>
                 {['S', 'M', 'L'].map((size) => (
                   <button type="button">
-                    {size} {calculatePizzaPrice(pizza.price, size)}
+                    {size} {formatMoney(calculatePizzaPrice(pizza.price, size))}
                   </button>
                 ))}
               </div>
             </div>
           ))}
         </fieldset>
-        <fieldset>
+        <fieldset className="order">
           <legend>Order</legend>
         </fieldset>
-      </form>
+      </OrderStyles>
     </>
   );
 }
