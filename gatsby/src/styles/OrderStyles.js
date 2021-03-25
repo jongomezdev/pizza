@@ -25,6 +25,7 @@ const OrderStyles = styled.form`
       height: 100%;
     }
   }
+  /* Other ways to hide besides display none are: scale to 0 or 1px or use zindex or text indent be sure to not throw off screen readers! */
   .mapleSyrup {
     display: none;
   }

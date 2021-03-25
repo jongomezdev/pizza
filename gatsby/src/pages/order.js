@@ -60,6 +60,7 @@ export default function OrderPage({ data }) {
               onChange={updateValue}
             />
           </label>
+          {/* honey pot to protect against bots */}
           <input
             type="mapleSyrup"
             name="mapleSyrup"
