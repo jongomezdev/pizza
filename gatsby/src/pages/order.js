@@ -9,7 +9,7 @@ import OrderStyles from '../styles/OrderStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
 import usePizza from '../utils/usePizza';
 import PizzaOrder from '../components/PizzaOrder';
-// import calculateOrderTotal from '../utils/calculateOrderTotal';
+import calculateOrderTotal from '../utils/calculateOrderTotal';
 
 export default function OrderPage({ data }) {
   const pizzas = data.pizzas.nodes;
@@ -111,7 +111,7 @@ export default function OrderPage({ data }) {
         </fieldset>
         <fieldset disabled={loading}>
           <h3>
-            {/* Your Total is {formatMoney(calculateOrderTotal(order, pizzas))} */}
+            Your Total is {formatMoney(calculateOrderTotal(order, pizzas))}
           </h3>
           <div aria-live="polite" aria-atomic="true">
             {error ? <p>Error: {error}</p> : ''}
