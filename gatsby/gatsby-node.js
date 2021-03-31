@@ -30,7 +30,6 @@ async function turnPizzasIntoPages({ graphql, actions }) {
 }
 
 async function turnToppingsIntoPages({ graphql, actions }) {
-  console.log(`Turning the Toppings into pages`);
   const toppingTemplate = path.resolve('./src/pages/pizzas.js');
   const { data } = await graphql(`
     query {
