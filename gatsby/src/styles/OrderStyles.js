@@ -5,24 +5,25 @@ const OrderStyles = styled.form`
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   fieldset {
-    display: grid;
-    gap: 1rem;
     grid-column: span 2;
     max-height: 600px;
     overflow: auto;
+    display: grid;
+    gap: 1rem;
+    grid-column: span 2;
+    align-content: start;
     label {
       display: grid;
       gap: 1rem;
-      align-content: start;
     }
-    label + label {
+    /* label + label {
       margin-top: 1rem;
-    }
+    } */
     &.order,
     &.menu {
-      grid-column: span 2;
+      grid-column: span 1;
       /* Chrome is weird about Grid and fieldsets, so we add a fixed height to fix it :)  */
-      height: 100%;
+      /* height: 100%; */
     }
   }
   /* Other ways to hide besides display none are: scale to 0 or 1px or use zindex or text indent be sure to not throw off screen readers! */
